@@ -1,39 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
-    <title>Resume Builder</title>
-</head>
-<body>
-     <h1>Static Resume Builder By Harisa Saeed</h1>
-     <form id="resumeForm">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name"> Name:</label>
-            <input for="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input for="email" id="email" name="email" required>
-            <label for="phone">Phone</label>
-            <input for="tel" id="phone" name="phone" required>
-        </fieldset>
-<fieldset>
-    <legend>Education</legend>
-    <label for="education">Education</label>
-    <textarea id="education" name="education" rows="4" required></textarea><br>
-</fieldset>
-<fieldset>
-    <legend>Experience</legend>
-    <label for="experince">Experience</label>
-    <textarea id="experience" name="experience" rows="4" required></textarea><br>
-</fieldset>
-<fieldset>
-    <legend>Skills</legend>
-    <label for="skills">Experience</label>
-    <textarea id="skills" name="skills" rows="4" required></textarea><br>
-</fieldset>
-<button type="submit">Generate Resume Below</button>
-     </form>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Resume</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Resume template -->
+      <div class="resume-box">
+        <!-- Wrapping the entire output in a box -->
+        <div class="row">
+          <!-- Left Column (Image and Links) -->
+          <div class="column-left">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/009/749/643/small_2x/woman-profile-mascot-illustration-female-avatar-character-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg"
+              alt="Profile Image"
+              class="myimg"
+            />
+            <div>
+              <p><strong>Name:</strong> Harisa Saeed</p>
+              <p><strong>Contact:</strong> +1234567890</p>
+              <p><strong>Address:</strong> Karachi ,Pakistan</p>
+              <hr />
+              <p><a href="https://github.com/harisasaeed">Github</a></p>
+              <p><a href="https://vercel.com/harisa-saeeds-projects">Vercel</a></p>
+              <p><a href="https://www.linkedin.com/in/harisa-saeed-2217642b5/">LinkedIn</a></p>
+            </div>
+          </div>
 
+          <!-- Right Column (Details) -->
+          <div class="column-right">
+            <h1 class="text-center">Harisa Saeed</h1>
+
+            <!-- Objective Section -->
+            <div class="section objective-box">
+              <h3>__Objective__</h3>
+              <p>
+                " Exploring Generative AI html| CSS |TypeScript Developer| Python | Excel & MS Office Expertise"
+              </p>
+            </div>
+
+            <!-- Skills Section in CV Template -->
+            <div class="skills-box">
+              <h4>__Skills__</h4>
+              <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>Communication Skills</li>
+                <li>Data Analysis</li>
+                <li>Problem Solving</li>
+              </ul>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="section work-experience-box">
+              <h3>__Work Experience__</h3>
+    
+                  <ul>
+                    <li><strong>Frontend Developer</strong>
+                        Developed responsive web applications, enhanced user interfaces, and optimized performance.</li>
+                  </ul>
+
+            
+            </div>
+
+            <!-- Academic Qualification Section -->
+            <div class="section academic-achievement-box">
+              <h3>__Academic Qualification__</h3>
+              <ul>
+                <li>
+                  <strong>diploma of Associate Engineering</strong>
+                </li>            
+                <li>
+                    <strong>Currently Enrolled in GIAIC</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
